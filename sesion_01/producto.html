@@ -9,11 +9,100 @@
     <h6>Producto</h6>
     <form id="Formulario Producto">
         <div id="Botones">
-            <button type="button">Ingresar</button>
-            <button type="menu">Sumar</button>
+            <button type="submit">Ingresar</button>
+            <button type="menu">Modificar</button>
             <button type="reset">Borrar</button>
             <button type="submit""">Salir</button>
         </div>
+
+        <br>
+        <fieldset>
+            <legend>Categoría</legend>
+            <label for="CategoriaSearchTxt">Nombre</label>
+            <input id="CategoriaSearchTxt" type="search" readonly />
+            <button id="CategoriaSearchBtn" type="button">Buscar...</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Proveedor</legend>
+            <label for="ProveedorSearchTxt">Nombre</label>
+            <input id="ProveedorSearchTxt" type="search" readonly />
+            <button id="ProveedorSearchBtn" type="button">Buscar...</button>
+        </fieldset>        
+
+        <br>
+        <label>Nombre</label>
+        <input id="NombreTxt" type="text" maxlength="5" />
+
+        <br>
+        <label>Descripcion</label>
+        <textarea rows="3" cols="10"></textarea>
+
+        <br>
+        <label>Precio</label>
+        <input type="number" />
+
+        <br>
+        <label>Fecha vencimiento</label>
+        <input type="date" />
+
+        <br>
+        <label>Mes oferta</label>
+        <input type="month"><!-- No disponible en todos los navegadores -->
+
+        <br>
+        <label>Imagen destacada</label>
+        <input type="file">
+
+        <br>
+        <input type="checkbox">
+        <label>documento identidad</label>
+
+        <br>
+        <label>Hora de llegada (estimada)</label>
+        <input type="time">
+        
+        <br>
+        <input type="radio" name="oferta" id="p10">
+        <label>10%</label>
+        <br>
+        <input type="radio" name="oferta" id="p20">
+        <label>20%</label>
+
+        <br>
+        <label>Color de fondo</label>
+        <input type="color">
+
+        <br>
+        <label>Email</label>
+        <input type="email">
+
+        <br>
+        <label>Consumo</label>
+        <input type="checkbox" checked>
+
+        <br>
+        <label>Recojo en tienda</label>
+        <input type="checkbox">
+
+        <br>
+        <label>Delivery</label>
+        <input type="checkbox" disabled>
+
+        <br>
+        <label>Igv</label>
+        <select id="TipoIgvSel">
+            <option selected>Seleccionar</option>
+            <option>General - 18%</option>
+            <option>Reducido - 12%</option>
+            <option>Exonerado - 0%</option>
+        </select>
+
+        <input id="CodigoProductoTxt" type="hidden">
     </form>
+
+    
+
+    
 </body>
 </html>
