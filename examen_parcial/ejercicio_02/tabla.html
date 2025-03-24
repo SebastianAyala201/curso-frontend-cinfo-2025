@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla</title>
+    <title>Tabla de Productos</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            font-weight: bold;
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
     <table>
@@ -12,9 +31,9 @@
                 <th>Producto</th>
                 <th>Precio</th>
                 <th>Descuento</th>
-                <th>Precio neto</th>
+                <th>Precio Neto</th>
                 <th>Cantidad</th>
-                <th>Igv</th>
+                <th>IGV (18%)</th>
                 <th>Subtotal</th>
             </tr>
         </thead>
@@ -37,18 +56,12 @@
                 <td>615</td>
                 <td>3765</td>
             </tr>
-            <tr>
-                <td>Tablet</td>
-                <td>800</td>
-                <td>8%</td>
-                <td>736</td>
-                <td>4</td>
-                <td>529.92</td>
-                <td>3473.92</td>
-            </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <td colspan="6">Total</td>
+                <td>8625</td>
+            </tr>
         </tfoot>
     </table>
 </body>

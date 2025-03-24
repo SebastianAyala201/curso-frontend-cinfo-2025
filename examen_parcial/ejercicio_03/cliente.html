@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="clienteForm">
+        <div class="buttons">
+            <button id="aceptarBtn" type="submit" disabled>Aceptar</button>
+            <button id="cancelarBtn" type="reset">Cancelar</button>
+        </div>
+
+        <label for="nombreTxt">Nombres</label>
+        <input id="nombreTxt" type="text" required />
+
+        <label for="apellPaternoTxt">Apellido paterno</label>
+        <input id="apellPaternoTxt" type="text" required />
+
+        <label for="apellMaternoTxt">Apellido materno</label>
+        <input id="apellMaternoTxt" type="text" required />
+
+        <label>Tipo Documento</label>
+        <input type="radio" name="TipDocumento" value="DNI" id="dni" required> <label for="dni">DNI</label>
+        <input type="radio" name="TipDocumento" value="Pasaporte" id="pasaporte"> <label for="pasaporte">Pasaporte</label>
+        <input type="radio" name="TipDocumento" value="CE" id="ce"> <label for="ce">CE</label>
+        
+        <label for="documentoTxt" id="labelDocumento">Ingrese Documento</label>
+        <input id="documentoTxt" type="text" required />
+
+        <label for="nivelEducacion">Nivel de educación</label>
+        <select id="nivelEducacion" required>
+            <option selected disabled>Seleccionar</option>
+            <option>Posgrado</option>
+            <option>Bachiller</option>
+            <option>Educación superior</option>
+            <option>Secundaria</option>
+            <option>Primaria</option>
+        </select>
+
+        <div>
+            <input type="checkbox" id="terminosChk">
+            <label for="terminosChk">Acepto los términos de referencia</label>
+        </div>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
