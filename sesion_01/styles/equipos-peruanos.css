@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(255, 204, 36);
+}
+h1 {
+    color: rgb(108, 2, 2);
+}
+.subtitulo-1{
+    color: rgb(97, 2, 2);
+    background-color: rgb(255, 229, 137);
+}
+.subtitulo-2{
+    background-color: rgba(30, 2, 97, 0.834);
+    color: rgb(255, 255, 255);
+}
+.subtitulo-3{
+    background-color: rgb(45, 244, 238);
+    color: rgb(247, 197, 15);
+}
+.subtitulo-4{
+    color: rgb(250, 6, 6);
+    background-color: rgb(8, 6, 0);
+}
+.subtitulo-5{
+    color: rgb(238, 2, 2);
+    background-color: rgb(255, 255, 255);
+}
+.subtitulo-6{
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 82, 161);
+}
+.subtitulo-7{
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 0, 0);
+}
