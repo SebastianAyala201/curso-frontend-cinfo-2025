@@ -1,5 +1,9 @@
 body {
     background-color: rgb(255, 204, 36);
+    background-image: url("../images/fondo_campeon.heic");
+    background-repeat: no-repeat; /* Evita la repetición */
+    /*background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
 }
 h1 {
     color: rgb(108, 2, 2);
