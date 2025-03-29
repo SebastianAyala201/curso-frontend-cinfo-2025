@@ -1,8 +1,7 @@
 body {
     background-color: rgb(255, 204, 36);
-    background-image: url("../images/fondo_campeon.heic");
     background-repeat: no-repeat; /* Evita la repetición */
-    /*background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center; /* Centra la imagen */
 }
 h1 {
@@ -52,8 +51,19 @@ h1 {
 .fuente{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+h2{
+    text-decoration: underline;
+    line-height: 1;
+}
 p.borde{
     border-style: dashed;
     border-width: 4px;
     border-color: aqua;
+}
+p.bordes_distinto{
+    border-bottom-style: dashed;
+    border-top-style: dotted;
+    border-left-style: double;
+    border-right-style: groove;
 }
