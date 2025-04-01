@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importacion de productos</title>
+</head>
+<body>
+    <!--
+     Diseñar el formulario de importación de productos.
+    Se registra el nombre del proveedor, ruc, moneda de pago, 
+    e indicación si requiere autorización Sunat.
+    -->
+    <form>
+        <h1>Importación de productos</h1>
+        <div id="Barra de botones">
+            <button id="guardarBtn" type="button">Guardar</button>
+            <button id="cancelarBtn" type="reset">Cancelar</button>
+            <button id="retornarBtn" type="button">Retornar</button>
+        </div>
+        <br>
+
+        <label for="nombreTxt">Nombre:</label>
+        <input id="nombreTxt" type="text">
+        <br>
+
+        <label for="proveedorTxt">Proveedor: </label>
+        <input id="proveedorTxt" type="number">
+        <br>
+        
+        <label for="rucTxt">Ruc: </label>
+        <input id="rucTxt" type="number">
+        <br>
+        
+        <label for="monpagoTxt">Moneda de pago: </label>
+        <select id="monpagoTxt" type="text">
+            <option value="selected=selected">Seleccionar</option>
+            <option value="Soles">Soles</option>
+            <option value="Dolares">Dolares</option>
+            <option value="Euros">Euros</option>
+
+        </select>
+        <br>
+        
+        <label for="sunatChk">Requiere autorización de la sunat</label>
+        <input id="sunatChk" type="checkbox">
+        <br>
+        
+
+    </form>
+</body>
+</html>
