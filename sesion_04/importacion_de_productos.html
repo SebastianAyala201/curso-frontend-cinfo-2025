@@ -20,21 +20,17 @@
         </div>
         <br>
 
-        <label for="nombreTxt">Nombre:</label>
-        <input id="nombreTxt" type="text">
-        <br>
-
         <label for="proveedorTxt">Proveedor: </label>
-        <input id="proveedorTxt" type="number">
+        <input id="proveedorTxt" type="text" placeholder="Nombre del proveedor" autocomplete="off">
         <br>
         
         <label for="rucTxt">Ruc: </label>
-        <input id="rucTxt" type="number">
+        <input id="rucTxt" type="number" placeholder="Ruc del proveedor" autocomplete="off">
         <br>
         
-        <label for="monpagoTxt">Moneda de pago: </label>
-        <select id="monpagoTxt" type="text">
-            <option value="selected=selected">Seleccionar</option>
+        <label for="monpagoSel">Moneda de pago: </label>
+        <select id="monpagoSel">
+            <option value="" selected>Seleccionar</option>
             <option value="Soles">Soles</option>
             <option value="Dolares">Dolares</option>
             <option value="Euros">Euros</option>
@@ -42,11 +38,14 @@
         </select>
         <br>
         
-        <label for="sunatChk">Requiere autorización de la sunat</label>
+        
         <input id="sunatChk" type="checkbox">
+        <label for="sunatChk">Requiere autorización de la sunat</label>
         <br>
         
 
     </form>
+
+    <script src="content/views/importacion_de_productos.js"></script>
 </body>
 </html>
