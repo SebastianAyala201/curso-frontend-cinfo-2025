@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceptar terminos</title>
+    <link href="content/views/terminos.css" rel="stylesheet">
+</head>
+<body>
+    <!--
+    Implementar la aceptación de términos de referencia, previo al envío de correo.
+	Si el usuario no marca la opción, el botón enviar estará deshabilitado.
+    -->   
+
+    <form>
+
+        <button id="GuardarBtn" type="button">Guardar</button>
+
+        <br><br>
+        <div id="MensajeDiv">Se envio a su correo correctamente</div>
+
+        <br><br>
+
+        <input id="TerminoChk" type="checkbox">
+        <label for="TerminoChk">Acepto los terminos</label>
+    </form>
+
+    <script src="content/libs/jquery/3.7.1/jquery-3.7.1.js"></script>
+    <script src="content/views/terminos.js"></script>
+</body>
+</html>
