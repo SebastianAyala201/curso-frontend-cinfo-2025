@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="wwwroot/views/producto-nuevo.css" rel="stylesheet">
+    <title>Producto - Nuevo</title>
+</head>
+
+<body>
+    <!--
+        Se le pide implementar el registro de nuevos productos
+        El nombre soporta hasta 100 caracteres, pero la caja de texto nombre corto, que irá en los 
+        stickers, tiene longitud 20.
+        Se le encarga implementar el autorenombrado de nombre corto al escribir el nombre.
+        Ejm:
+        Sierra eléctrica 2hp, incluye baterías recargables, con cargador 220v.
+        Sierra eléctrica 2hp
+    -->
+    <form id="producto-nuevo">
+        <div>
+            <button type="button">Guardar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+
+        <br><br>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" class="texto" type="text" maxlength="100">
+
+        <br><br>
+        <label for="nombre-corto">Nombre corto</label>
+        <input id="nombre-corto" class="texto" type="text" maxlength="20">
+
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="wwwroot/views/producto-nuevo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumno - Nuevo</title>
+</head>
+
+<body>
+    <!--
+        Leer los datos del alumno de una api-rest: código, provincia, distrito.
+        El nombre del alumno irá en un campo data del elemento html
+        Los datos como tipo y número de documento lo guarda en modo oculto
+    -->
+    <form>
+        <div>
+            <button id="GuardarButton" type="button">Guardar</button>
+        </div>
+
+        <br><br>
+        <label for="codigo">Código</label>
+        <input id="codigo" type="text">
+
+        <br>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text">
+
+        <br>
+        <label for="provincia">Provincia</label>
+        <input id="provincia" type="text">
+
+        <br>
+        <label for="distrito">Distrito</label>
+        <input id="distrito" type="text">
+
+        <br>
+        <input id="tipodocumento" type="hidden">
+        <input id="numerodocumento" type="hidden">
+
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="wwwroot/views/alumno-nuevo.js"></script>
+</body>
+
+</html>

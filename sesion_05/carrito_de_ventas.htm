@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Ventas</title>
+</head>
+
+<body>
+    <!--
+        Implementar un carrito de ventas trimoneda (con radio button)
+        Según la moneda seleccionada mostrar el nombre de la moneda en la etiqueta de la caja de texto monto
+    -->
+    <form>
+        <label for="sol-radio">Soles:</label>
+        <input id="sol-radio" name="moneda" type="radio">
+
+        <br>
+        <label for="dolar-radio">Dolares:</label>
+        <input id="dolar-radio" name="moneda" type="radio">
+
+        <br>
+        <label for="euros-radio">Euros:</label>
+        <input id="euros-radio" name="moneda" type="radio">
+
+        <br><br>
+        <label id="monto-label" for="monto"></label>
+        <input id="monto" type="text">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="wwwroot/views/carrito_de_ventas.js"></script>
+</body>
+
+</html>
