@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-success me-2">Guardar</button>
+                <button class="btn btn-secondary">Cancelar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="card">
+                    <div class="card-header">Datos personales</div>
+                    <div class="card-body">
+                        <label for="nombreTxt">Nombres</label>
+                        <input id="nombreTxt" type="text" maxlength="40">
+                        <br>
+                        <label for="apPaternoTxt">Apellido paterno</label>
+                        <input id="apPaternoTxt" type="text" maxlength="40">
+                        <br>
+                        <label for="apMaternoTxt">Apellido materno</label>
+                        <input id="apMaternoTxt" type="text" maxlength="40">
+                        <br>
+                        <label>Tipo Documento</label>
+                        <input type="radio" name="TipDocumento" value="DNI" id="dni" required>
+                        <label for="dni">DNI</label>
+                        <input type="radio" name="TipDocumento" value="Pasaporte" id="pasaporte">
+                        <label for="pasaporte">Pasaporte</label>
+                        <input type="radio" name="TipDocumento" value="CE" id="ce">
+                        <label for="ce">CE</label>
+                        <br>
+                        <input id="termiChk" type="checkbox">
+                        <label for="termiChk">Acepto los términos</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
